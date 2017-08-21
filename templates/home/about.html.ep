@@ -14,6 +14,7 @@
       <h1>Memoria</h1>
       <h2>Spanish, meaning <i>memory</i></h2> 
       <p><%== hostname  %></p>
+      <p><a href="https://github.com/ckriutz/memoria">github project site</a></p>
       <h4><a href="/">Home</a></h4>
     </div>
 
