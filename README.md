@@ -35,7 +35,7 @@ According to Mojolicious [Morbo](http://mojolicious.org/perldoc/Mojolicious/Guid
 
 ### npm and bower? Are you serious?
 
-Well, yes. I suppose I could just check in the files and be done with that, but there is no need to check in those files, and npm works as good as anything I suppose. Now, I realise the irony of installing nodejs just to install bower so I can install bootstrap, but well, that's how it goes. If there is a better way to set that up, let me know.
+Well, yes. I suppose I could just check in the files and be done with that, but there is no need to check in those files, and npm works as good as anything I suppose. Now, I realize the irony of installing nodejs just to install bower so I can install bootstrap, but well, that's how it goes. If there is a better way to set that up, let me know.
 
 ### To build the container
 
