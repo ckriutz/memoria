@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Memoria</title>
+
+   <!-- Apperently the best way to do this is to use this trick with the stylesheet. -->
+   <!-- Also, the public folder (public) is assumed. -->
+   %= stylesheet 'lib/bootstrap/dist/css/bootstrap.min.css'
+   
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container text-center"">
+      <h1>Memoria</h1>
+      <h2>Spanish, meaning <i>memory</i></h2> 
+      <p><%== hostname  %></p>
+      <h4><a href="/">Home</a></h4>
+    </div>
+
+  </div>
+</body>
+</html>

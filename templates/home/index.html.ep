@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Memoria</title>
+
+   <!-- Apperently the best way to do this is to use this trick with the stylesheet. -->
+   <!-- Also, the public folder (public) is assumed. -->
+   %= stylesheet 'lib/bootstrap/dist/css/bootstrap.min.css'
+   
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container text-center"">
+      <h1>Memoria</h1>
+      <p><%== hostname  %></p>
+      <h3 id="pCurrentCount" style="padding: 5px;"><%= $currentCount %></h3>
+      <button type="button" id="btnIncrement" class="btn btn-primary">Increment</button>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <!-- Apperently the best way to do this is to use this trick with the javascript. -->
+  <!-- Also, the public folder (public) is assumed. -->
+  %= javascript 'lib/jquery/dist/jquery.min.js'
+  %= javascript 'lib/bootstrap/dist/js/bootstrap.min.js'
+
+  <!-- TODO: Put this into a seperate file. -->
+  <script type="text/javascript">
+     $("#btnIncrement").click(function() {
+        var url = "/increment";
+        
+        $.getJSON(url, function(data) { 
+           $("#pCurrentCount").text(data.count);
+        });
+     });
+   </script>
+
+
+</body>
+</html>
